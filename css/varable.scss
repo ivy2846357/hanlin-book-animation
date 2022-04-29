@@ -1,6 +1,7 @@
 .book .paper .back {
     transition: transform 1s;
     transform-origin: 0 50%;
+    color: #fff;
   }
 
 @for $i from 2 through 6 {

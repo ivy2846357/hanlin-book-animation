@@ -256,62 +256,62 @@ body {
 }
 
 .teams-page-1 {
-  background-image: url("/img/teams-paper-1.png");
+  background-image: url("./img/teams-paper-1.png");
   background-size: cover;
 }
 
 .teams-page-2 {
-  background-image: url("/img/teams-paper-2-r.png");
+  background-image: url("./img/teams-paper-2-r.png");
   background-size: cover;
 }
 
 .teams-page-3 {
-  background-image: url("/img/teams-paper-3.png");
+  background-image: url("./img/teams-paper-3.png");
   background-size: cover;
 }
 
 .teams-page-4 {
-  background-image: url("/img/teams-paper-4-r.png");
+  background-image: url("./img/teams-paper-4-r.png");
   background-size: cover;
 }
 
 .teams-page-5 {
-  background-image: url("/img/teams-paper-5.png");
+  background-image: url("./img/teams-paper-5.png");
   background-size: cover;
 }
 
 .teams-page-6 {
-  background-image: url("/img/teams-paper-6-r.png");
+  background-image: url("./img/teams-paper-6-r.png");
   background-size: cover;
 }
 
 .teams-page-7 {
-  background-image: url("/img/teams-paper-7.png");
+  background-image: url("./img/teams-paper-7.png");
   background-size: cover;
 }
 
 .teams-page-8 {
-  background-image: url("/img/teams-paper-8-r.png");
+  background-image: url("./img/teams-paper-8-r.png");
   background-size: cover;
 }
 
 .teams-page-9 {
-  background-image: url("/img/teams-paper-9.png");
+  background-image: url("./img/teams-paper-9.png");
   background-size: cover;
 }
 
 .teams-page-10 {
-  background-image: url("/img/teams-paper-10-r.png");
+  background-image: url("./img/teams-paper-10-r.png");
   background-size: cover;
 }
 
 .teams-page-11 {
-  background-image: url("/img/teams-paper-11.png");
+  background-image: url("./img/teams-paper-11.png");
   background-size: cover;
 }
 
 .teams-page-12 {
-  background-image: url("/img/teams-paper-12-r.png");
+  background-image: url("./img/teams-paper-12-r.png");
   background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
