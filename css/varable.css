@@ -1,0 +1,148 @@
+.book .paper .back {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+.book .open.page-2 .back {
+  -webkit-transform: translateZ(-2px);
+          transform: translateZ(-2px);
+}
+
+.book .open.page-3 .back {
+  -webkit-transform: translateZ(-3px);
+          transform: translateZ(-3px);
+}
+
+.book .open.page-4 .back {
+  -webkit-transform: translateZ(-4px);
+          transform: translateZ(-4px);
+}
+
+.book .open.page-5 .back {
+  -webkit-transform: translateZ(-5px);
+          transform: translateZ(-5px);
+}
+
+.book .open.page-6 .back {
+  -webkit-transform: translateZ(-6px);
+          transform: translateZ(-6px);
+}
+
+.book .paper.page-1 {
+  z-index: 11;
+}
+
+.book .paper.page-2 {
+  z-index: 12;
+}
+
+.book .paper.page-3 {
+  z-index: 13;
+}
+
+.book .paper.page-4 {
+  z-index: 14;
+}
+
+.book .paper.page-5 {
+  z-index: 15;
+}
+
+.book .paper.page-6 {
+  z-index: 16;
+}
+
+.book .page-1 .front {
+  -webkit-transform: translateZ(0.9px);
+          transform: translateZ(0.9px);
+}
+
+.book .page-2 .front {
+  -webkit-transform: translateZ(0.8px);
+          transform: translateZ(0.8px);
+}
+
+.book .page-3 .front {
+  -webkit-transform: translateZ(0.7px);
+          transform: translateZ(0.7px);
+}
+
+.book .page-4 .front {
+  -webkit-transform: translateZ(0.6px);
+          transform: translateZ(0.6px);
+}
+
+.book .page-5 .front {
+  -webkit-transform: translateZ(0.5px);
+          transform: translateZ(0.5px);
+}
+
+.book .page-6 .front {
+  -webkit-transform: translateZ(0.4px);
+          transform: translateZ(0.4px);
+}
+
+.teams-page-1 {
+  background-image: url("/img/teams-paper-1.png");
+  background-size: cover;
+}
+
+.teams-page-2 {
+  background-image: url("/img/teams-paper-2-r.png");
+  background-size: cover;
+}
+
+.teams-page-3 {
+  background-image: url("/img/teams-paper-3.png");
+  background-size: cover;
+}
+
+.teams-page-4 {
+  background-image: url("/img/teams-paper-4-r.png");
+  background-size: cover;
+}
+
+.teams-page-5 {
+  background-image: url("/img/teams-paper-5.png");
+  background-size: cover;
+}
+
+.teams-page-6 {
+  background-image: url("/img/teams-paper-6-r.png");
+  background-size: cover;
+}
+
+.teams-page-7 {
+  background-image: url("/img/teams-paper-7.png");
+  background-size: cover;
+}
+
+.teams-page-8 {
+  background-image: url("/img/teams-paper-8-r.png");
+  background-size: cover;
+}
+
+.teams-page-9 {
+  background-image: url("/img/teams-paper-9.png");
+  background-size: cover;
+}
+
+.teams-page-10 {
+  background-image: url("/img/teams-paper-10-r.png");
+  background-size: cover;
+}
+
+.teams-page-11 {
+  background-image: url("/img/teams-paper-11.png");
+  background-size: cover;
+}
+
+.teams-page-12 {
+  background-image: url("/img/teams-paper-12-r.png");
+  background-size: cover;
+}
+/*# sourceMappingURL=varable.css.map */

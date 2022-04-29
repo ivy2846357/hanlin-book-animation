@@ -1,0 +1,36 @@
+.book .paper .back {
+    transition: transform 1s;
+    transform-origin: 0 50%;
+  }
+
+@for $i from 2 through 6 {
+    .book .open.page-#{$i} .back{
+        transform: translateZ(-#{$i}px);
+    }
+}
+
+@for $i from 1 through 6 {
+    .book .paper.page-#{$i}{
+        z-index: 10+$i;
+    }
+}
+
+@for $i from 1 through 6 {
+    .book .page-#{$i} .front{
+        transform: translateZ(#{1-$i/10}px);
+    }
+} 
+
+@for $i from 1 through 12 {
+    @if $i%2 == 0{
+        .teams-page-#{$i}{
+            background-image: url('/img/teams-paper-#{$i}-r.png');
+            background-size: cover;
+        }
+    }@else{
+        .teams-page-#{$i}{
+            background-image: url('/img/teams-paper-#{$i}.png');
+            background-size: cover;
+        }
+    }
+}
