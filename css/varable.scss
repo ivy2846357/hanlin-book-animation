@@ -7,7 +7,7 @@
 // 設定頁面背面位置
 @for $i from 2 through 14 {
     .book .open.page-#{$i} .back{
-        transform: translateZ(-#{$i}px);
+        transform: translateZ(-#{$i}*5px);
     }
 }
 

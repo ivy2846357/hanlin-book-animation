@@ -93,10 +93,10 @@ body {
 }
 
 .book .paper {
-  -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 0.5s 0.2s;
-  transition: -webkit-transform 1s, -webkit-box-shadow 0.5s 0.2s;
-  transition: transform 1s, box-shadow 0.5s 0.2s;
-  transition: transform 1s, box-shadow 0.5s 0.2s, -webkit-transform 1s, -webkit-box-shadow 0.5s 0.2s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
   -webkit-transform-style: preserve-3d;
@@ -109,7 +109,7 @@ body {
 }
 
 .book .paper.open:nth-child(1),
-.book .page-14 {
+.page-14 {
   -webkit-box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
           box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
 }
