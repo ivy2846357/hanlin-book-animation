@@ -13,6 +13,7 @@ $(".front:not(.last)").click(function(event) {
   // 進下一頁
   $(".book").addClass("open").addClass("openbook")
   $(this).parent(".paper").addClass("open");
+  $('.openbook').css('left', '50%');
 });
 
 // 回上一頁
@@ -32,9 +33,13 @@ $(".back").click(function(event) {
   }
 });
 
+$('.teams-page-2').click(function(){
+  $('.openbook').css('left', '33%');
+})
+
 // 點擊至最後一頁
 $('.teams-page-27').click(function(e){
-  $('.openbook').css('left', '60%');
+  $('.openbook').css('left', '66%');
 })
 
 // 從最後一頁翻回來
