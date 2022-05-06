@@ -23,3 +23,13 @@ $(".back").click(function(event) {
     $(this).parent(".paper").removeClass("open");
   }
 });
+
+$('.teams-page-27').click(function(e){
+  $('.shadow').addClass('d-none');
+  $('.openbook').css('left', '70%');
+})
+
+$('.teams-page-28').click(function(){
+  $('.shadow').removeClass('d-none');
+  $('.openbook').css('left', '45%');
+})

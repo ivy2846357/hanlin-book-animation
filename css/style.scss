@@ -30,7 +30,8 @@ body {
 }
 .book {
   transform-style: preserve-3d;
-  transform: rotateX(45deg) rotateY(0deg) rotateZ(-45deg);
+  // transform: rotateX(45deg) rotateY(0deg) rotateZ(-45deg);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   transition: all 1s;
   position: absolute;
   left: 35%;
@@ -64,7 +65,7 @@ body {
 }
 .book.open {
   // transform: rotateX(35deg) rotateY(0deg) rotateZ(-35deg);
-  transform: rotateX(22deg) rotateY(0deg) rotateZ(-15deg);
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 .book .paper,
 .book .shadow {
@@ -87,8 +88,10 @@ body {
 }
 .book .paper.open {
   transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
+  
 }
-.book .paper.open:nth-child(1){
+.book .paper.open:nth-child(1),
+.book .page-14{
   // box-shadow: 2.2em 1em 0px 0px #ccc3a9;
   box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
 }
@@ -129,4 +132,8 @@ body {
   transform: translate(-50%,-50%);
 }
 
-@import './varable.scss';
+.d-none{
+  display: none;
+}
+
+@import './varable.scss'; 
