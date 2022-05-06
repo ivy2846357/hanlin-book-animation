@@ -31,13 +31,13 @@
     @if $i%2 == 0{
         // 頁面雙數引用 XXX-r 的圖檔
         .teams-page-#{$i}{
-            background-image: url('../img/teams-paper-#{$i}-r.png');
+            background-image: linear-gradient(to right,rgba(135, 135, 135,0.4) 0%, transparent 5%), url('../img/teams-paper-#{$i}-r.png');
             background-size: cover;
         }
     }@else{
         // 頁面單數引用原本的圖檔
         .teams-page-#{$i}{
-            background-image: url('../img/teams-paper-#{$i}.png');
+            background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135,0.4) 100%), url('../img/teams-paper-#{$i}.png');
             background-size: cover;
         }
     }

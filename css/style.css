@@ -92,11 +92,6 @@ body {
   left: 0;
 }
 
-.paper:hover {
-  -webkit-transform: perspective(250rem) rotateY(-20deg);
-          transform: perspective(250rem) rotateY(-20deg);
-}
-
 .book .paper {
   -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 0.5s 0.2s;
   transition: -webkit-transform 1s, -webkit-box-shadow 0.5s 0.2s;
@@ -111,12 +106,6 @@ body {
 .book .paper.open {
   -webkit-transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
           transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
-}
-
-.book .paper.open:nth-child(1),
-.page-14 {
-  -webkit-box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
-          box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
 }
 
 .book .paper .page.front {
@@ -378,141 +367,169 @@ body {
 }
 
 .teams-page-1 {
-  background-image: url("../img/teams-paper-1.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-1.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-1.png");
   background-size: cover;
 }
 
 .teams-page-2 {
-  background-image: url("../img/teams-paper-2-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-2-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-2-r.png");
   background-size: cover;
 }
 
 .teams-page-3 {
-  background-image: url("../img/teams-paper-3.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-3.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-3.png");
   background-size: cover;
 }
 
 .teams-page-4 {
-  background-image: url("../img/teams-paper-4-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-4-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-4-r.png");
   background-size: cover;
 }
 
 .teams-page-5 {
-  background-image: url("../img/teams-paper-5.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-5.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-5.png");
   background-size: cover;
 }
 
 .teams-page-6 {
-  background-image: url("../img/teams-paper-6-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-6-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-6-r.png");
   background-size: cover;
 }
 
 .teams-page-7 {
-  background-image: url("../img/teams-paper-7.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-7.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-7.png");
   background-size: cover;
 }
 
 .teams-page-8 {
-  background-image: url("../img/teams-paper-8-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-8-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-8-r.png");
   background-size: cover;
 }
 
 .teams-page-9 {
-  background-image: url("../img/teams-paper-9.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-9.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-9.png");
   background-size: cover;
 }
 
 .teams-page-10 {
-  background-image: url("../img/teams-paper-10-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-10-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-10-r.png");
   background-size: cover;
 }
 
 .teams-page-11 {
-  background-image: url("../img/teams-paper-11.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-11.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-11.png");
   background-size: cover;
 }
 
 .teams-page-12 {
-  background-image: url("../img/teams-paper-12-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-12-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-12-r.png");
   background-size: cover;
 }
 
 .teams-page-13 {
-  background-image: url("../img/teams-paper-13.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-13.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-13.png");
   background-size: cover;
 }
 
 .teams-page-14 {
-  background-image: url("../img/teams-paper-14-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-14-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-14-r.png");
   background-size: cover;
 }
 
 .teams-page-15 {
-  background-image: url("../img/teams-paper-15.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-15.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-15.png");
   background-size: cover;
 }
 
 .teams-page-16 {
-  background-image: url("../img/teams-paper-16-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-16-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-16-r.png");
   background-size: cover;
 }
 
 .teams-page-17 {
-  background-image: url("../img/teams-paper-17.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-17.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-17.png");
   background-size: cover;
 }
 
 .teams-page-18 {
-  background-image: url("../img/teams-paper-18-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-18-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-18-r.png");
   background-size: cover;
 }
 
 .teams-page-19 {
-  background-image: url("../img/teams-paper-19.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-19.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-19.png");
   background-size: cover;
 }
 
 .teams-page-20 {
-  background-image: url("../img/teams-paper-20-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-20-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-20-r.png");
   background-size: cover;
 }
 
 .teams-page-21 {
-  background-image: url("../img/teams-paper-21.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-21.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-21.png");
   background-size: cover;
 }
 
 .teams-page-22 {
-  background-image: url("../img/teams-paper-22-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-22-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-22-r.png");
   background-size: cover;
 }
 
 .teams-page-23 {
-  background-image: url("../img/teams-paper-23.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-23.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-23.png");
   background-size: cover;
 }
 
 .teams-page-24 {
-  background-image: url("../img/teams-paper-24-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-24-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-24-r.png");
   background-size: cover;
 }
 
 .teams-page-25 {
-  background-image: url("../img/teams-paper-25.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-25.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-25.png");
   background-size: cover;
 }
 
 .teams-page-26 {
-  background-image: url("../img/teams-paper-26-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-26-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-26-r.png");
   background-size: cover;
 }
 
 .teams-page-27 {
-  background-image: url("../img/teams-paper-27.png");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(95%, transparent), to(rgba(135, 135, 135, 0.4))), url("../img/teams-paper-27.png");
+  background-image: linear-gradient(to left, transparent 95%, rgba(135, 135, 135, 0.4) 100%), url("../img/teams-paper-27.png");
   background-size: cover;
 }
 
 .teams-page-28 {
-  background-image: url("../img/teams-paper-28-r.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(135, 135, 135, 0.4)), color-stop(5%, transparent)), url("../img/teams-paper-28-r.png");
+  background-image: linear-gradient(to right, rgba(135, 135, 135, 0.4) 0%, transparent 5%), url("../img/teams-paper-28-r.png");
   background-size: cover;
 }

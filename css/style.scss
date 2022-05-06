@@ -83,9 +83,9 @@ body {
   left: 0;
 }
 // 頁面 hover 放大效果
-.paper:hover{
-  transform: perspective(250rem) rotateY(-20deg);
-}
+// .paper:hover{
+//   transform: perspective(250rem) rotateY(-20deg);
+// }
 
 // .book .shadow {
 //   background: transparent;
@@ -103,11 +103,11 @@ body {
   transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
   
 }
-.book .paper.open:nth-child(1),
-.page-14{
-  // box-shadow: 2.2em 1em 0px 0px #ccc3a9;
-  box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
-}
+// .book .paper.open:nth-child(1),
+// .page-14{
+//   // box-shadow: 2.2em 1em 0px 0px #ccc3a9;
+//   box-shadow: 0.5em 1em 3em 0.5em #ccc3a9;
+// }
 .book .paper .page.front {
   transition: transform 1s;
   transform-origin: 0 50%;
