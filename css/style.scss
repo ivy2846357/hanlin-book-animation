@@ -83,10 +83,10 @@ body {
   left: 0;
 }
 // 頁面 hover 放大效果
-// .paper:hover{
-//   transform: all .5s;
-//   transform: perspective(250rem) rotateY(-20deg);
-// }
+.paper:hover{
+  transform: perspective(250rem) rotateY(-20deg);
+}
+
 // .book .shadow {
 //   background: transparent;
 //   transform: translateZ(-3em);
@@ -95,8 +95,7 @@ body {
 // }
 // 翻書效果
 .book .paper {
-  // transition: transform 1s, box-shadow 0.5s 0.2s;
-  transition: transform .5s,;
+  transition: transform 1s, box-shadow 0.5s 0.2s;
   transform-origin: 0 50%;
   transform-style: preserve-3d;
 }

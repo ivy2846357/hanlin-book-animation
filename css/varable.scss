@@ -7,14 +7,14 @@
 // 設定頁面背面位置
 @for $i from 2 through 14 {
     .book .open.page-#{$i} .back{
-        transform: translateZ(-#{$i}*5px);
+        transform: translateZ(-#{$i*5}px);
     }
 }
 
 // 設定每頁的 z-index（遞增）
 @for $i from 1 through 14 {
     .book .paper.page-#{$i}{
-        z-index: 10+$i;
+        z-index: 40-$i;
     }
 }
 
@@ -22,6 +22,7 @@
 @for $i from 1 through 14 {
     .book .page-#{$i} .front{
         transform: translateZ(#{2-$i/10}px);
+        z-index: 10+$i;
     }
 }
 
