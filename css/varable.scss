@@ -4,31 +4,37 @@
     color: #fff;
   }
 
+// 設定頁面背面位置
 @for $i from 2 through 14 {
     .book .open.page-#{$i} .back{
         transform: translateZ(-#{$i}px);
     }
 }
 
+// 設定每頁的 z-index（遞增）
 @for $i from 1 through 14 {
     .book .paper.page-#{$i}{
         z-index: 10+$i;
     }
 }
 
+// 設定頁面正面位置
 @for $i from 1 through 14 {
     .book .page-#{$i} .front{
         transform: translateZ(#{2-$i/10}px);
     }
 }
 
+// 引入簡介本頁面圖片
 @for $i from 1 through 28 {
     @if $i%2 == 0{
+        // 頁面雙數引用 XXX-r 的圖檔
         .teams-page-#{$i}{
             background-image: url('../img/teams-paper-#{$i}-r.png');
             background-size: cover;
         }
     }@else{
+        // 頁面單數引用原本的圖檔
         .teams-page-#{$i}{
             background-image: url('../img/teams-paper-#{$i}.png');
             background-size: cover;

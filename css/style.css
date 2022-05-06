@@ -19,7 +19,7 @@ body {
 }
 
 #container {
-  width: 60%;
+  width: 100%;
   margin: 20px auto;
 }
 
@@ -43,15 +43,13 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   position: absolute;
-  left: 35%;
+  left: 50%;
   top: 8%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin: auto;
   width: 30em;
   height: 40em;
-}
-
-.book.openbook {
-  left: 45%;
 }
 
 .book .side {
@@ -92,15 +90,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.book .shadow {
-  background: transparent;
-  -webkit-transform: translateZ(-3em);
-          transform: translateZ(-3em);
-  -webkit-box-shadow: -1em 1em 1em 0px #ccc3a9;
-          box-shadow: -1em 1em 1em 0px #ccc3a9;
-  z-index: 1;
 }
 
 .book .paper {
@@ -166,10 +155,6 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.d-none {
-  display: none;
 }
 
 .book .paper .back {
