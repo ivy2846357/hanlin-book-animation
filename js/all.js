@@ -4,10 +4,10 @@ var ratio = winWidth / 1920;
 var posX = Math.max(80 * ratio, 30);
 
 // 進下一頁
-$(".front:not(.last)").click(function(event) {
+$(".front:not(.last)").click(function (event) {
   // 點擊放大鏡打開 PDF 不要進下一頁
   let target = $(event.target)
-  if(target.is('.open-pdf')){
+  if (target.is('.open-pdf')) {
     retuen
   }
   // 進下一頁
@@ -17,32 +17,49 @@ $(".front:not(.last)").click(function(event) {
 });
 
 // 回上一頁
-$(".back").click(function(event) {
+$(".back").click(function (event) {
   // 點擊放大鏡打開 PDF 不要回下一頁
   let target = $(event.target)
-  if(target.is('.open-pdf')){
+  if (target.is('.open-pdf')) {
     retuen
   }
   // 回翻時，如果點擊回第一頁的動作
-  if ($(this).parent(".paper").index() == 0){
+  if ($(this).parent(".paper").index() == 0) {
     $(".book").removeClass("open").removeClass("openbook");
     $(this).parent(".paper").removeClass("open");
-  }else{
+  } else {
     // 回上一頁
     $(this).parent(".paper").removeClass("open");
   }
 });
 
-$('.teams-page-2').click(function(){
+$('.teams-page-2').click(function () {
   $('.openbook').css('left', '33%');
 })
 
 // 點擊至最後一頁
-$('.teams-page-27').click(function(e){
+$('.teams-page-27').click(function (e) {
   $('.openbook').css('left', '66%');
 })
 
 // 從最後一頁翻回來
-$('.teams-page-28').click(function(){
+$('.teams-page-28').click(function () {
   $('.openbook').css('left', '50%');
 })
+
+let fullscreen;
+let eBook = document.querySelector('#container');
+let fsEnter = document.getElementById('fullscr');
+fsEnter.addEventListener('click', function (e) {
+  e.preventDefault();
+  if (!fullscreen) {
+    fullscreen = true;
+    // document.documentElement.requestFullscreen();
+    eBook.requestFullscreen();
+    fsEnter.innerHTML = "Exit Fullscreen";
+  } else {
+    fullscreen = false;
+    document.exitFullscreen();
+    fsEnter.innerHTML = "Go Fullscreen";
+  }
+});
