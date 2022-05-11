@@ -37,16 +37,17 @@ $('.teams-page-2').click(function () {
   $('.openbook').css('left', '33%');
 })
 
-// 點擊至最後一頁
-$('.teams-page-27').click(function (e) {
-  $('.openbook').css('left', '66%');
-})
+// // 點擊至最後一頁
+// $('.teams-page-27').click(function (e) {
+//   $('.openbook').css('left', '66%');
+// })
 
-// 從最後一頁翻回來
-$('.teams-page-28').click(function () {
-  $('.openbook').css('left', '50%');
-})
+// // 從最後一頁翻回來
+// $('.teams-page-28').click(function () {
+//   $('.openbook').css('left', '50%');
+// })
 
+// 全螢幕設定
 let fullscreen;
 let eBook = document.querySelector('#container');
 let fsEnter = document.getElementById('fullscr');
@@ -56,10 +57,18 @@ fsEnter.addEventListener('click', function (e) {
     fullscreen = true;
     // document.documentElement.requestFullscreen();
     eBook.requestFullscreen();
+    $('.book').css({
+      'transform': 'scale(1.5) translateY(-13%)',
+      'height': '100vh'
+    });
     fsEnter.innerHTML = "Exit Fullscreen";
   } else {
     fullscreen = false;
     document.exitFullscreen();
+    $('.book').css({
+      'transform': 'scale(1) translateY(-44%)',
+      'height': '80vh'
+    });
     fsEnter.innerHTML = "Go Fullscreen";
   }
 });

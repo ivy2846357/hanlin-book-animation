@@ -1,33 +1,20 @@
-html,
-body {
-  height: 100%;
-}
-body {
-  background: #fff4d3;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  overflow: hidden;
-  font-size: 16px;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+// container 的設置未完成，還沒 push 到 github 上
 #container {
+  background-color: #fff4d3;
   width: 100%;
-  height: 75%;
-  margin: 20px auto;
+  height: 80vh;
+  margin: 0 auto;
   position: relative;
   display: inline-block;
   vertical-align: middle;
 }
-// .v-center {
-//   display: inline-block;
-//   vertical-align: middle;
-//   height: 100%;
-//   width: 0;
-// }
+
 // 設定書本角度
 .book {
   transform-style: preserve-3d;
@@ -37,10 +24,12 @@ body {
   position: absolute;
   // 設定書本一開始的位置
   left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
   margin: auto;
-  // width: 100%;
   height: 40em;
 }
+
 // 設定書本打開後的位置
 // .book.openbook{
 //   left: 50%;
@@ -72,6 +61,7 @@ body {
   // transform: rotateX(35deg) rotateY(0deg) rotateZ(-35deg);
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
+
 .book .paper,
 .book .shadow {
   width: 28em;
@@ -80,6 +70,7 @@ body {
   top: 0;
   left: 0;
 }
+
 // 頁面 hover 放大效果
 // .paper:hover{
 //   transform: perspective(250rem) rotateY(-20deg);
@@ -97,9 +88,11 @@ body {
   transform-origin: 0 50%;
   transform-style: preserve-3d;
 }
+
 .book .paper.open {
   transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
 }
+
 // .book .paper.open:nth-child(1),
 // .page-14{
 //   // box-shadow: 2.2em 1em 0px 0px #ccc3a9;
@@ -120,15 +113,15 @@ body {
   transform: translateZ(0px);
 }
 
-// .book .page-1 .page.front:after {
-//   position: absolute;
-//   content: "";
-//   width: 50%;
-//   height: 100%;
-//   left: 0;
-//   top: 0;
-//   background: rgba(160, 115, 115, 0.1);
-// }
+.book .page-1 .page.front:after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(160, 115, 115, 0.1);
+}
 
 // 放大鏡圖示
 // .open-pdf{
@@ -148,4 +141,4 @@ body {
 // }
 
 // 引用相關變數
-@import './varable.scss'; 
+@import './varable.scss';
