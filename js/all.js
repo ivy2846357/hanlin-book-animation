@@ -66,7 +66,7 @@ fsEnter.addEventListener('click', function (e) {
     fullscreen = false;
     document.exitFullscreen();
     $('.book').css({
-      'transform': 'scale(1) translateY(-44%)',
+      'transform': 'scale(1) translateY(-47%)',
       'height': '80vh'
     });
     fsEnter.innerHTML = "Go Fullscreen";
