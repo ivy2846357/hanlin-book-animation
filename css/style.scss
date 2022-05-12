@@ -90,10 +90,10 @@
 //   transform: rotateX(90deg);
 // }
 // 設定書本翻開後的角度
-.book.open {
-  // transform: rotateX(35deg) rotateY(0deg) rotateZ(-35deg);
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
+// .book.open {
+//   // transform: rotateX(35deg) rotateY(0deg) rotateZ(-35deg);
+//   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+// }
 
 .book .paper,
 .book .shadow {

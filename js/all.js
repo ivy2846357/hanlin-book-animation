@@ -61,14 +61,14 @@ fsEnter.addEventListener('click', function (e) {
       'transform': 'scale(1.5) translateY(-13%)',
       'height': '100vh'
     });
-    fsEnter.innerHTML = "Exit Fullscreen";
+    fsEnter.innerHTML = "離開全螢幕";
   } else {
     fullscreen = false;
     document.exitFullscreen();
     $('.book').css({
-      'transform': 'scale(1) translateY(-47%)',
+      'transform': 'scale(1) translateY(-45%)',
       'height': '80vh'
     });
-    fsEnter.innerHTML = "Go Fullscreen";
+    fsEnter.innerHTML = "進入全螢幕";
   }
 });
